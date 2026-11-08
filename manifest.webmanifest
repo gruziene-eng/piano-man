@@ -1,0 +1,12 @@
+{
+  "name": "Piano Man",
+  "short_name": "Piano Man",
+  "description": "Mano pianino kelias nuo pirmos natos iki masterclass",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f3ec",
+  "theme_color": "#2a2420",
+  "lang": "lt",
+  "icons": [{ "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

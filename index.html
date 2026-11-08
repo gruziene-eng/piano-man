@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Piano Man — mano kelias iki masterclass</title>
+  <meta name="description" content="Asmeninė pianino mokymosi, praktikos, iššūkių ir įrašų platforma.">
+  <meta name="theme-color" content="#f7f3ec">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">
+          <span></span><span class="b"></span><span></span><span class="b"></span><span></span>
+        </div>
+        <div>
+          <div class="brand-name">Piano Man</div>
+          <div class="brand-sub">nuo pirmos natos iki scenos</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#/" data-route="">🏠 <span>Pradžia</span></a>
+        <a href="#/kelias" data-route="kelias">🗺️ <span>Mokymosi kelias</span></a>
+        <a href="#/praktika" data-route="praktika">⏱️ <span>Praktika</span></a>
+        <a href="#/klaviatura" data-route="klaviatura">🎹 <span>Klaviatūra ir natos</span></a>
+        <a href="#/issukiai" data-route="issukiai">🏆 <span>Iššūkiai</span></a>
+        <a href="#/studija" data-route="studija">🎙️ <span>Įrašų studija</span></a>
+        <a href="#/repertuaras" data-route="repertuaras">📚 <span>Repertuaras</span></a>
+        <a href="#/pasirodymai" data-route="pasirodymai">✨ <span>Pasirodymai</span></a>
+        <a href="#/iranga" data-route="iranga">🎧 <span>Mano įranga</span></a>
+        <a href="#/nustatymai" data-route="nustatymai">⚙️ <span>Nustatymai</span></a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="midi-status" id="midiStatus" title="MIDI ryšys su pianinu">
+          <span class="dot"></span><span class="txt">MIDI neprijungtas</span>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Šviesi / tamsi tema">🌙</button>
+      </div>
+    </aside>
+
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Meniu">☰</button>
+      <div class="brand-name small">Piano Man</div>
+      <div class="xp-pill" id="xpPillTop"></div>
+    </header>
+
+    <main class="main" id="view" tabindex="-1"></main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true">
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
